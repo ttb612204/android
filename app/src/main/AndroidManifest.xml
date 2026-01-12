@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Svg_adr"
+        tools:targetApi="31">
+
+        <!-- Auth Activities -->
+        <activity
+            android:name=".ui.auth.LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ui.auth.RegisterActivity" />
+
+        <!-- Customer Activities -->
+        <activity android:name=".ui.customer.HomeActivity" />
+        <activity android:name=".ui.customer.ProductListActivity" />
+        <activity android:name=".ui.customer.ProductDetailActivity" />
+        <activity android:name=".ui.customer.CartActivity" />
+        <activity android:name=".ui.customer.CheckoutActivity" />
+        <activity android:name=".ui.customer.OrderHistoryActivity" />
+        <activity android:name=".ui.customer.OrderDetailActivity" />
+        <activity android:name=".ui.customer.FavoritesActivity" />
+        <activity android:name=".ui.customer.EditProfileActivity" />
+
+        <!-- Store Activities -->
+        <activity android:name=".ui.store.StoreDashboardActivity" />
+        <activity android:name=".ui.store.ProductManagementActivity" />
+        <activity android:name=".ui.store.AddEditProductActivity" />
+        <activity android:name=".ui.store.StoreOrdersActivity" />
+        <activity android:name=".ui.store.EditStoreActivity" />
+        <activity android:name=".ui.store.CategoryManagementActivity" />
+
+        <!-- Admin Activities -->
+        <activity android:name=".ui.admin.AdminDashboardActivity" />
+        <activity android:name=".ui.admin.UserManagementActivity" />
+        <activity android:name=".ui.admin.StoreApprovalActivity" />
+        <activity android:name=".ui.admin.ProductApprovalActivity" />
+
+    </application>
+
+</manifest>

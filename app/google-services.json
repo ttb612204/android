@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "48136523344",
+    "project_id": "svg-adr",
+    "storage_bucket": "svg-adr.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:48136523344:android:81e228be48274a0a0e0b55",
+        "android_client_info": {
+          "package_name": "com.example.svg_adr"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfVQUc0NqSbnz9_qW1f9gPUvuSclzNj5g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
